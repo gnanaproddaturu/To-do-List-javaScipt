@@ -11,7 +11,7 @@
     width: 100%;
     min-height: 100vh;
     width: auto;
-    pad: 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
@@ -25,7 +25,7 @@
     border-radius: 10px;
 }
 .container h2{
-    columns: #002765;
+    color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -80,7 +80,7 @@ ul li::before {
     background-repeat: no-repeat;
 }
 ul li.checked{
-    columns: #555;
+    color: #555;
     text-decoration:line-through ;
 }
 ul li.checked::before{
@@ -103,4 +103,56 @@ ul li span{
 }
 ul li span:hover{
     background-color: rgb(236, 231, 219);
-}
+} 
+
+
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+
+    .container h2 img {
+        height: 30px;
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        border-radius: 15px;
+    }
+
+    .row input {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .row button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    ul li {
+        font-size: 16px;
+        padding: 12px 40px 12px 45px;
+        word-break: break-word;
+    }
+
+    ul li span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+    }
+} 
