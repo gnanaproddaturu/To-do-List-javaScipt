@@ -1,0 +1,116 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+#mainDiv{
+    background: linear-gradient(120deg ,rgb(27, 27, 248) ,rgb(4, 66, 128) , rgb(109, 109, 238) );
+    width: 100%;
+    min-height: 100vh;
+    width: auto;
+    pad: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+ 
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 100px auto 300px;
+    padding: 40px 30px 70px ;
+    border-radius: 10px;
+}
+.container h2{
+    columns: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+    
+    
+}
+.row{
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row input{
+   border: none;
+   outline: none;
+   background: transparent;
+   flex: 1;
+   padding: 8px;
+   
+    
+}
+.row button{
+     border: none;
+   outline: none;
+    padding: 16px 50px;
+    border-radius: 40px;
+    font-size:16px;
+    color: white;
+    /* background-color: rgb(240, 87, 32); */
+    background: linear-gradient( 130deg ,rgb(255, 94, 0), rgb(232, 162, 33) ,rgb(255, 128, 0));
+    cursor: pointer;
+    
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    position: relative; /* Important */
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-fSzWWvhRiU6MWZJqZ4nE4fOloSfwxOiF7A&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ul li.checked{
+    columns: #555;
+    text-decoration:line-through ;
+}
+ul li.checked::before{
+     width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-image: url('./images/ChatGPT\ Image\ Jun\ 12\,\ 2026\,\ 03_15_00\ PM.png');
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    color : #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgb(236, 231, 219);
+}
